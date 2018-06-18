@@ -11,6 +11,7 @@ def create_export_file():
     f = open(filename, 'w')
     headers = 'CRIME, TIME, LOCATION, CITY\n'
     f.write(headers)
+    print('Your file: ' + filename + ' is ready!')
     return f
 
 def export_data(f, crime, time, location, city):
